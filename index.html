@@ -150,7 +150,7 @@
 
         // --- Gemini API Call Function ---
         async function callGemini(prompt, isJson = false) {
-            const apiKey = ""; // Populated by environment
+            const apiKey = "AIzaSyC64t5dRegUSc_CmUPDoNV9JI-aCd1uKXI"; // Populated by environment
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
             const payload = { contents: [{ role: "user", parts: [{ text: prompt }] }] };
             if (isJson) {
